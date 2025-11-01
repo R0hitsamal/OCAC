@@ -14,6 +14,9 @@ const Signup = () => {
     password: "",
     cpassword: "",
   });
+  // const [userCreated, setUserCreated] = useState(false);
+  // const [err,seterr] = useState(false)
+  // const [response,setResponse] = useState("")
 
   const handleChange = (e) => {
     setUserDetails({...userDetails, [e.target.name]: e.target.value});
@@ -27,6 +30,7 @@ const Signup = () => {
     alert(res.data.message);
     console.log(res);
     if (res.status === 201) {
+      // setUserCreated(true)
       setUserDetails({
         ...userDetails,
         username: "",
