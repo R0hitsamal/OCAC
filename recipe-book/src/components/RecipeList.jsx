@@ -1,0 +1,19 @@
+import React from 'react';
+import RecipeCard from './RecipeCard';
+
+const RecipeList = ({ recipes, selectedRecipe, onRecipeSelect }) => {
+  return (
+    <div className="recipe-list">
+      {recipes.map((recipe) => (
+        <RecipeCard
+          key={recipe.id}
+          recipe={recipe}
+          isSelected={selectedRecipe.id === recipe.id}
+          onSelect={onRecipeSelect}
+        />
+      ))}
+    </div>
+  );
+};
+
+export default RecipeList;
