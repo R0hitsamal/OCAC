@@ -2,7 +2,6 @@
 
 This repository contains projects completed during my internship at **OCAC Training Center**, covering a range of web development and programming exercises. These projects showcase hands-on experience with CRUD operations, React, APIs, and more.
 
----
 
 ## 🗂 Projects Overview
 
